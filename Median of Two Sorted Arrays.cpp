@@ -1,11 +1,11 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        int m = nums1.length;
-        int n= nums2.length;
-        int a[] = new arr[m+n];
+        int m = nums1.size();
+        int n= nums2.size();
+        int a[m+n];
         
-        int i=0;j=0;k=0;
+        int i=0,j=0,k=0;
         while(i<m&&j<n){
             if(nums1[i] < nums2[j]){
                 a[k] = nums1[i];
